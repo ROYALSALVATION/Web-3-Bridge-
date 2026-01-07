@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WB3 — Web3 Interoperability Bridge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #0f172a;
+      }
+
+      /* Glassmorphism Effect */
+      .glass-nav {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .glass-card {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* Compatibility Optimized Gradient Text */
+      .gradient-text {
+        background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+        background-clip: text;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        color: transparent; 
+      }
+
+      .hero-glow {
+        background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+      }
+
+      .card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        border-color: rgba(59, 130, 246, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-200 antialiased">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3 group cursor-pointer">
+          <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform">
+            <img src="/public/images/logo.jpeg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <span class="text-2xl font-black tracking-tighter text-white uppercase italic">
+            WB3 <span class="text-blue-500 not-italic font-light">Bridge</span>
+          </span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-bold tracking-wide">
+          <a href="#about" class="text-slate-400 hover:text-white transition">About</a>
+          <a href="#launchpad" class="text-slate-400 hover:text-white transition">Launchpad</a>
+          <a href="#team" class="text-slate-400 hover:text-white transition">Team</a>
+          <a href="mailto:Royalworldroyal@gmail.com" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-500 transition shadow-lg shadow-blue-600/20">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="relative text-center pt-48 pb-32 px-4 hero-glow overflow-hidden">
+      <div class="max-w-4xl mx-auto relative z-10">
+        <h1 class="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight leading-tight">
+          <span class="gradient-text">WB3 — Web3 Bridge</span>
+        </h1>
+        <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+          The future of cross-chain communication. Move tokens, NFTs, and data
+          across blockchains securely, fast, and with low fees.
+        </p>
+        <div class="flex justify-center gap-4">
+          <a
+            href="#about"
+            class="bg-blue-600 px-8 py-4 rounded-2xl text-lg font-bold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/25 active:scale-95"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto py-20 px-6">
+      <h2 class="text-4xl font-bold mb-16 text-center tracking-tight">
+        What We’re Building
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass-card p-8 rounded-[2rem] card-hover">
+          <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+            <span class="text-2xl">🔗</span> Cross-Chain Connectivity
+          </h3>
+          <p class="text-slate-400 leading-relaxed">
+            WB3 connects multiple blockchains, allowing them to communicate and
+            share assets seamlessly.
+          </p>
+        </div>
+        <div class="glass-card p-8 rounded-[2rem] card-hover">
+          <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+            <span class="text-2xl">🛡</span> Security-First Design
+          </h3>
+          <p class="text-slate-400 leading-relaxed">
+            Built with decentralized verification, audits, and anti-hack
+            protection to keep users safe.
+          </p>
+        </div>
+        <div class="glass-card p-8 rounded-[2rem] card-hover">
+          <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+            <span class="text-2xl">💸</span> Low Fees & Fast Transfers
+          </h3>
+          <p class="text-slate-400 leading-relaxed">
+            Transfer tokens and NFTs across chains quickly and cheaply, without
+            delays.
+          </p>
+        </div>
+        <div class="glass-card p-8 rounded-[2rem] card-hover">
+          <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+            <span class="text-2xl">🧠</span> Developer-Friendly
+          </h3>
+          <p class="text-slate-400 leading-relaxed">
+            Tools and APIs that let developers build apps that work across
+            different chains easily.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-900/50 border-y border-white/5 py-24 px-6 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6 tracking-tight">Why We’re Raising Funds Early</h2>
+        <p class="text-slate-400 text-lg leading-relaxed">
+          Web3 bridges require strong security, audits, infrastructure, and
+          testing. Funding early helps us hire skilled developers, run security
+          audits, build faster, and launch a product users can trust.
+        </p>
+      </div>
+    </section>
+
+    <section id="launchpad" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+        <div class="glass-card p-10 rounded-[2.5rem]">
+          <h2 class="text-3xl font-bold mb-6 gradient-text">About Us</h2>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            Web3 Bridge (WB3) is a decentralized multi-chain interoperability
+            protocol designed to enable secure, fast, and low-cost asset
+            transfers and cross-chain messaging between blockchain ecosystems.
+            Our mission is to remove fragmentation in Web3 by providing
+            infrastructure that connects communities.
+          </p>
+          <h3 class="text-xl font-bold mb-4 text-white">Core Focus:</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              Secure cross-chain asset bridging
+            </li>
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              Low-fee and fast transaction finality
+            </li>
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              Decentralized validator network
+            </li>
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              Cross-chain messaging for dApps and DAOs
+            </li>
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              Community-driven governance
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-10 rounded-[2.5rem]">
+          <h2 class="text-3xl font-bold mb-6 gradient-text">Token Launchpad</h2>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            WB3 token launch will be conducted through a **trusted IDO/IEO
+            launchpad platform (TBA)** after smart contract security audit and
+            community whitelist selection.
+          </p>
+          <h3 class="text-xl font-bold mb-4 text-white">Launch Process:</h3>
+          <ul class="space-y-2 mb-10 text-sm text-slate-400">
+            <li>• Smart contract deployment (Testnet → Mainnet)</li>
+            <li>• Security audit completion</li>
+            <li>• Launchpad partner announcement</li>
+            <li>• Community whitelist & token sale</li>
+            <li>• Liquidity pool lock</li>
+            <li>• Exchange listing & staking activation</li>
+          </ul>
+          <div class="bg-slate-900 p-6 rounded-2xl text-center border border-white/5">
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Launchpad Platform</p>
+            <p class="text-3xl font-black text-blue-500">TBA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="max-w-6xl mx-auto py-24 px-6">
+      <h2 class="text-4xl font-bold mb-16 text-center tracking-tight">Our Team</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-[2rem] text-center card-hover">
+          <div class="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl mx-auto mb-6 flex items-center justify-center font-black text-2xl shadow-xl shadow-blue-900/40">R</div>
+          <h3 class="font-bold text-xl mb-1 text-white">Reyan Brick <br> & <br> Royal</h3>
+          <p class="text-blue-500 text-sm font-bold uppercase tracking-wider">Founder & Vision Lead</p>
+        </div>
+        <div class="glass-card p-8 rounded-[2rem] text-center card-hover">
+          <div class="w-20 h-20 bg-slate-800 rounded-2xl mx-auto mb-6 flex items-center justify-center font-black text-2xl">S</div>
+          <h3 class="font-bold text-xl mb-1 text-white">Smart Contract Dev</h3>
+          <p class="text-slate-500 text-sm font-bold uppercase tracking-wider">Blockchain Engineer</p>
+        </div>
+        <div class="glass-card p-8 rounded-[2rem] text-center card-hover">
+          <div class="w-20 h-20 bg-slate-800 rounded-2xl mx-auto mb-6 flex items-center justify-center font-black text-2xl">U</div>
+          <h3 class="font-bold text-xl mb-1 text-white">UI/UX Designer</h3>
+          <p class="text-slate-500 text-sm font-bold uppercase tracking-wider">Product Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-6 py-24">
+      <div class="glass-card p-10 rounded-[3rem]">
+        <h2 class="text-3xl font-bold mb-8 text-center tracking-tight text-white">Apply to Become a Moderator</h2>
+        <form class="space-y-5">
+          <input type="text" placeholder="Your Name" class="w-full p-4 rounded-2xl bg-slate-900/50 border border-white/10 outline-none focus:border-blue-500 transition-all" required />
+          <input type="email" placeholder="Email Address" class="w-full p-4 rounded-2xl bg-slate-900/50 border border-white/10 outline-none focus:border-blue-500 transition-all" required />
+          <textarea placeholder="Why do you want to join?" class="w-full p-4 rounded-2xl bg-slate-900/50 border border-white/10 outline-none focus:border-blue-500 transition-all h-32" required></textarea>
+          <button type="submit" class="w-full bg-blue-600 p-4 rounded-2xl font-bold text-lg hover:bg-blue-500 transition-all active:scale-95">Submit Application</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="text-center py-20 border-t border-white/5 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- <div class="flex justify-center items-center gap-3 mb-10 opacity-50 grayscale hover:grayscale-0 transition-all">
+          <div class="w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center font-black text-white text-sm">W</div>
+          <span class="text-xl font-black tracking-tighter text-white uppercase italic">WB3</span>
+        </div> -->
+        <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 mb-12">
+          <a href="https://x.com/Web_3_bridge?t=PJ16Kxek5IZKSaXB5B1eBA&s=09" class="text-slate-400 hover:text-white transition font-bold tracking-widest text-xs">𝕏 TWITTER</a>
+          <a href="https://t.me/+zoRtkd_Ilzw1NjE0" class="text-slate-400 hover:text-white transition font-bold tracking-widest text-xs">TELEGRAM</a>
+          <a href="https://t.me/+qditIovXQgJlNDU8" class="text-slate-400 hover:text-white transition font-bold tracking-widest text-xs">CHANNEL</a>
+          <a href="mailto:Royalworldroyal@gmail.com" class="text-slate-400 hover:text-white transition font-bold tracking-widest text-xs lowercase"><strong>Royalworldroyal@gmail.com</strong></a>
+        </div>
+        <p class="text-slate-600 text-xs font-bold uppercase tracking-[0.3em] leading-loose">
+          ©️ 2026 WB3 Web3 Bridge. <br> Connecting ecosystems for the decentralized future.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
